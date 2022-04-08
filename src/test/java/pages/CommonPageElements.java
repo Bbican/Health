@@ -63,6 +63,10 @@ public class CommonPageElements {
     @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/div[1]/div/table/tbody/tr[1]/td[2]")
     public WebElement actualroomNumber;
 
+    @FindBy(xpath = "//*[@id=\"root\"]/div/div/div[1]/div/div/div[1]")
+    public WebElement verificationMessage;
+
+
 
 
 

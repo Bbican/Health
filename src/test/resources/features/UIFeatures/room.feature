@@ -13,3 +13,5 @@ Feature:Room creation with Admin
 
       | username | password    | room_number |price|
       | Admin80  | Welcome123! | 8881        |2000 |
+
+

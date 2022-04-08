@@ -3,6 +3,7 @@ package step_definitions.UI_step_definitions;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import pages.CommonPageElements;
 import utilities.ConfigurationReader;
 import utilities.Driver;
@@ -65,12 +66,10 @@ public class Room_Step_Definitions {
 
         waitAndClick(commonPageElements.CreatedDate);
         actualRoomNumber = commonPageElements.actualroomNumber.getText();
-        System.out.println(actualRoomNumber);
-
-
-
-
+        Assert.assertTrue("A Room is created with identifier",commonPageElements.verificationMessage.isDisplayed());
+        System.out.println(commonPageElements.verificationMessage.getText());
 
     }
+
 
 }
